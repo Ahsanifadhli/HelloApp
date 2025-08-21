@@ -9,11 +9,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_toast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/toast" />
+
 
     <TextView
         android:id="@+id/txt_number"
@@ -24,10 +20,22 @@
         android:background="@color/yellow"
         android:text="@string/_0"/>
 
-    <Button
-        android:id="@+id/btn_count"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/count" />
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/toast"/>
+        <Button
+            android:id="@+id/btn_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/count"/>
+    </LinearLayout>
 
 </LinearLayout>

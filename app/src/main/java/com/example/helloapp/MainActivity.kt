@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             btnCount.setOnClickListener {
+
                 number ++
                 txtNumber.text=number.toString()
             }
